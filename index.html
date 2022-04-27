@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./bootstrap-3.1.1-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./bootstrap-3.1.1-dist/js/bootstrap.min.js">
+  <script src="./jquery-3.3.1.min.js"></script>
+  <script src="./main.js"></script>
+</head>
+<body>
+  <div class="header">
+    <img src="./logo.PNG" alt="">
+    <div class="header-text">
+      <h1>ĐOÀN THANH NIÊN THÀNH PHỐ HỒ CHÍ MINH</h1>
+      <h3>ĐOÀN THANH NIÊN TRƯỜNG ĐẠI HỌC CÔNG NGHIỆP THÀNH PHỐ HỒ CHÍ MINH</h3>
+    </div>
+  </div>
+  <div class="nav">
+    <ul class="items">
+      <li><a href="#">TRANG CHỦ</a></li>
+      <li><a href="#">ĐOÀN THỂ</a></li>
+      <li><a href="#">SỰ KIỆN</a></li>
+      <li><a href="#">HOẠT ĐỘNG</a>
+        <ul class="sub-items">
+          <li><a href="#" id="myBtn">ĐĂNG KÝ</a></li>
+          <li><a href="#">THAM GIA</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div class="content">
+    <img src="./ngayhoithanhnien.JPG" alt="">
+    <div class="content-text">
+      <h2>TIN NỔI BẬC</h2>
+      <ul>
+        <li><a href="#">I. Mùa hè xanh</a></li>
+        <li><a href="#">II. Thanh niên tình nguyện</a></li>
+        <li><a href="#">III. Tấm lòng vàng</a></li>
+        <li><a href="#">IV. Hiến máu nhân đạo</a></li>
+        <li><a href="#">V. Bảo vệ môi trường sạch</a></li>
+        <li><a href="#">VI. Thi đua lập thành tích chào mừng 26/3</a></li>
+      </ul>
+    </div>
+  </div>
+  <table class="table table-striped">
+    <caption>
+      <h4>DANH SÁCH ĐĂNG KÍ HOẠT ĐỘNG MÙA HÈ XANH</h4>
+    </caption>
+    <thead>
+      <tr>
+        <th>STT</th>
+        <th>Mã SV</th>
+        <th>Tên SV</th>
+        <th>Ngày tham gia</th>
+        <th>Email</th>
+        <th>Số điện thoại</th>
+      </tr>
+    </thead>
+  </table>
+  <footer>
+    <p>&copy; 2020-2021 Đoàn thanh niên - Trường đại học Công Nghiệp TP.Hồ Chí Minh</p>
+  </footer>
+  <div class="modal fade" id="myModal", role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times; </button>
+          <h4>THÔNG TIN ĐĂNG KÝ</h4>
+        </div>
+        <div class="modal-body">
+          <form role="form" class="form-horizontal">
+            <div class="form-group">
+              <div id="thongbao" class="text-danger" style="text-align: center"></div>
+            </div>
+            <div class="form-group">
+              <label for="txtMa" class="control-label col-xs-3">Mã sinh viên</label>
+              <div class="col-md-9">
+                <input type="text" class="form-control" value="2008754121" id="txtMa"
+                  placeholder="Nhập mã sinh viên" id="txtMa">
+                <span id="tbMa" class="text-danger"> *</span>
+              </div>
+            </div>
+            <div class="form-group">
+                <label for="txtTen" class="control-label col-xs-3">Tên sinh viên</label>
+                <div class="col-md-9">
+                  <input type="text" class="form-control" id="txtTen" placeholder="Nhập họ tên">
+                  <span id="tbTen" class="text-danger">*</span>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="txtNgay" class="control-label col-xs-3"> Ngày tham gia </label>
+                  <div class="col-md-9">
+                    <input type="date" class="form-control" id="txtNgay">
+                    <span id="tbNgay" class="text-danger"> *</span>
+                  </div>
+              </div>
+              <div class="form-group">
+                <label for="txtEmail" class="control-label col-xs-3">Email</label>
+                <div class="col-md-9">
+                  <input type="email" class="form-control" id="txtEmail" placeholder="Nhập email">
+                  <span id="tbMmail" class="text-danger"></span>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="txtSDT" class="control-label col-xs-3">Số điện thoại</label>
+                <div class="col-md-9">
+                  <input type="text" class="form-control" id="txtSDT" placeholder="Nhập số điện thoại">
+                  <span id="txtSDT" class="text-danger"> *</span>
+                </div>
+            </div>
+            <button type="button" id="btnSave" class="btn btn-success btn-block">Luu</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
