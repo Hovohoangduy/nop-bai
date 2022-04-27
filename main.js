@@ -1,8 +1,8 @@
 $(document).ready(function () {
   var i = 1;
-  $("#myBtn").click(function () {
-    $("#myModal").modal();
-  });
+  $("#myBtn").click(function(){
+    $("#myModal").modal()
+});
 
   function KiemtraMa() {
     var re = /^[0-9]{10}/;
